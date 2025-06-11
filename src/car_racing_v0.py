@@ -8,6 +8,7 @@ import copy
 from pathlib import Path
 import pickle
 import gym
+import os
 from gym import spaces
 from gym.envs.box2d.car_dynamics import Car
 from gym.error import DependencyNotInstalled, InvalidAction
@@ -835,7 +836,8 @@ if __name__ == "__main__":
             steps += 1
             if terminated or truncated or restart or quit:
                 break
-        
-    with open('list_state_action.pkl','wb') as f:
+
+    os.makedirs('src/data/trajectories', exist_ok=True)
+    with open('src/data/trajectories/list_state_action.pkl','wb') as f:
         pickle.dump(list_state_action, f)
     env.close()

@@ -101,8 +101,8 @@ def eval_model():
             total_reward += reward
 
             if steps % 200 == 0 or terminated or truncated:
-                print(f"\n🎮 Ação: {[f'{x:+0.2f}' for x in action]}")
-                print(f"Etapa {steps}, Recompensa acumulada: {total_reward:+0.2f}")
+                print(f"\nAção: {[f'{x:+0.2f}' for x in action]}")
+                print(f"Steps {steps}, Recompensa acumulada: {total_reward:+0.2f}")
 
             steps += 1
             if terminated or truncated or steps == 2000:

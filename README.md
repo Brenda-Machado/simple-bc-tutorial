@@ -1,4 +1,4 @@
-# 🚗 Clonagem Comportamental (Behavioral Cloning)
+# 🚗 Clonagem Comportamental (Behavior Cloning)
 
 **Clonagem Comportamental (CC)** é uma técnica de *Aprendizado por Imitação* em que um modelo supervisionado (geralmente uma rede neural) aprende a imitar o comportamento de um especialista. Esse processo utiliza um conjunto de dados fixo com pares observação-ação ou trajetórias capturadas durante a execução da tarefa pelo especialista.
 
@@ -19,7 +19,7 @@ O exemplo desse repositório é o uso da CC em direção autônoma, em que as en
 
 ## 🧠 2. Treinamento e Avaliação
 
-- **Modelo:** A rede neural utilizada é uma CNN (Rede Neural Convolucional).
+- **Modelo:** A rede neural utilizada é uma CNN (Rede Neural Convolucional) baseada na proposta por [Irving2023](https://repositorio.ufsc.br/handle/123456789/251825).
 
 <p align="center">
   <img src="carRacing_CNN.png" alt="CNN Architecture" width="500"/>
